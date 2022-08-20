@@ -1,0 +1,62 @@
+[
+  {
+    "image": "Rectangle.png",
+    "name": "Rectangle",
+    "value": "rectangle"
+  },
+  {
+    "image": "Browline.png",
+    "name": "Browline",
+    "value": "browline"
+  },
+  {
+    "image": "Aviator.png",
+    "name": "Aviator",
+    "value": "aviator"
+  },
+  {
+    "image": "Geometric.png",
+    "name": "Geometric",
+    "value": "geometric"
+  },
+  {
+    "image": "Wayframe.png",
+    "name": "Wayframe",
+    "value": "wayframe"
+  },
+  {
+    "image": "Round.png",
+    "name": "Round",
+    "value": "round"
+  },
+  {
+    "image": "Oval.png",
+    "name": "Oval",
+    "value": "oval"
+  },
+  {
+    "image": "Oversized.png",
+    "name": "Oversized",
+    "value": "oversized"
+  },
+  {
+    "image": "Cat Eye.png",
+    "name": "Cat Eye",
+    "value": "cat_eye"
+  },
+  {
+    "image": "Rimless.png",
+    "name": "Rimless",
+    "value": "rimless"
+  },
+  {
+    "image": "Square.png",
+    "name": "Square",
+    "value": "square"
+  },
+  {
+    "image": "Wrap.png",
+    "name": "Wrap",
+    "value": "wrap"
+  }
+]

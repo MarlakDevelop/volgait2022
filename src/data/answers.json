@@ -1,0 +1,42 @@
+{
+  "gender": {
+    "men": 4,
+    "women": 5
+  },
+  "eyewear_type": {
+    "eyeglasses": 210,
+    "sunglasses": 211
+  },
+  "lenstype": {
+    "near": 6,
+    "distance": 6,
+    "multifocal": 7
+  },
+  "frame_size": {
+    "small": 68,
+    "medium": 67,
+    "large": 66,
+    "wider": 66,
+    "average": 67,
+    "narrower": 68
+  },
+  "blue_light": {
+    "yes": true,
+    "no": false
+  },
+  "shade": {
+    "dark": "dark",
+    "light": "light",
+    "transition": "transition"
+  },
+  "face_shape": {
+    "long": "long",
+    "round": "round",
+    "between": "between"
+  },
+  "facial_features": {
+    "sharp": "sharp",
+    "rounded": "rounded",
+    "between": "between"
+  }
+}

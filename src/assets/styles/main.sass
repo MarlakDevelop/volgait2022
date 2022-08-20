@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap')
+
+body
+  margin: 0
+
+@mixin margin-x($name, $size)
+  .margin-x-#{$name}
+    margin-left: $size
+    margin-right: $size
+
+@mixin padding-x($name, $size)
+  .padding-x-#{$name}
+    padding-left: $size
+    padding-right: $size
+
+@mixin padding-y($name, $size)
+  .padding-y-#{$name}
+    padding-top: $size
+    padding-bottom: $size
+
+.glasses-quiz-widget
+  height: 100vh
+  width: 100vw
+  display: flex
+  flex-direction: column
+  font-family: 'Open Sans'
+  background-color: #F7F8F9
+
+  @include margin-x('0', 0)
+  @include margin-x('xs', 12px)
+  @include margin-x('sm', 15px)
+  @include margin-x('md', 25px)
+  @include margin-x('lg', 30px)
+  @include margin-x('xl', 35px)
+  @include margin-x('2xl', 40px)
+  @include margin-x('3xl', 50px)
+
+  @include padding-x('0', 0)
+  @include padding-x('xs', 12px)
+  @include padding-x('sm', 15px)
+  @include padding-x('md', 25px)
+  @include padding-x('lg', 30px)
+  @include padding-x('xl', 35px)
+  @include padding-x('2xl', 40px)
+  @include padding-x('3xl', 50px)
+
+  @include padding-y('0', 0)
+  @include padding-y('xs', 12px)
+  @include padding-y('sm', 15px)
+  @include padding-y('md', 25px)
+  @include padding-y('lg', 30px)
+  @include padding-y('xl', 35px)
+  @include padding-y('2xl', 40px)
+  @include padding-y('3xl', 50px)
+
+  .m-0-auto
+    margin: 0 auto
+
+  .horizontal-scroller
+    overflow-x: scroll
+    max-width: 100%
+    overflow-y: visible
+    padding-top: 15px
+    padding-bottom: 15px
+    box-sizing: border-box
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+    &::-webkit-scrollbar
+      width: 0 !important
+
+  .screen-flex-column-between
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    box-sizing: border-box
+    padding-bottom: 25px
+
+  .text-center
+    text-align: center
+
+  .button
+    background: linear-gradient(270deg, #45C7FA 0%, #2196F3 100%)
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.03)
+    border: none
+    border-radius: 24px
+    width: 180px
+    height: 48px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 700
+    font-size: 18px
+    line-height: 21px
+    text-align: center
+    color: #FFFFFF
+    cursor: pointer
+
+    &[disabled]
+      background: #DEDEDE
+      cursor: default
+
+  .logo
+    padding-left: 2px
+
+  .header
+    height: 66px
+    display: flex
+    flex-direction: column
+    background-color: #FFFFFF
+
+    .navigation
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: relative
+      z-index: 5
+      padding: 0 23px
+      flex-grow: 1
+      font-size: 18px
+      line-height: 19px
+      color: #3C5060
+      box-shadow: 0 1px 2px rgba(58, 72, 80, 0.07), 0 6px 13px rgba(176, 189, 197, 0.14)
+
+      &.navigation-with-progressbar
+        box-shadow: 0 1px 7px rgba(58, 72, 80, 0.07)
+
+      .navigationButton
+        display: block
+        cursor: pointer
+
+    .progress
+      height: 8px
+      background: #D8D8D8
+      position: relative
+      overflow: hidden
+
+    .progress-line
+      background: linear-gradient(290.47deg, #3797FA 11.33%, #45C9FF 83.66%)
+      border-top-right-radius: 4px
+      border-bottom-right-radius: 4px
+      width: calc(100% + 10px)
+      transition: right 1s
+      position: absolute
+      top: 0
+      bottom: 0
+
+  .body
+    flex-grow: 1
+
+    &.preview
+      padding: 0 25px
+      background: linear-gradient(180deg, #E8F0F2 0%, rgba(232, 240, 242, 0) 100%)
+
+    .banner
+      text-align: center
+
+      img
+        display: inline
+
+  .card
+    background: #FFFFFF
+    border: 1px solid rgba(231, 235, 237, 0.80141)
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06)
+    border-radius: 14px
+    cursor: pointer
+
+  .gender-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 14px
+    height: 138px
+    width: 100%
+
+    .name
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #425A60
+
+  .eyeware-type-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 17px
+    height: 138px
+    width: 100%
+
+    .name
+      font-weight: 600
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+      color: #425A60
+
+  .vision-option-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    height: 120px
+    text-align: center
+    color: #425A60
+
+  .vision-card
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #425A60
+    padding: 30px 0
+
+  .frame-width-card
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 13px 20px 17px
+
+    .name
+      font-weight: 400
+      font-size: 18px
+      line-height: 25px
+      color: #425A60
+
+    .size
+      font-weight: 700
+      font-size: 18px
+      line-height: 25px
+      color: #0F0F0F
+
+  .face-width-card
+    padding: 30px 0
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #425A60
+
+  .eyeglasses-option-card
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 138px
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #4C5B79
+
+  .shade-card
+    display: flex
+    justify-content: left
+    align-items: center
+    height: 89px
+
+    .icon
+      width: 88px
+      padding-left: 6px
+      text-align: center
+
+      img
+        display: inline
+
+    .divisor
+      width: 1px
+      height: 35px
+      background: #DEDEDE
+
+    .name
+      font-weight: 600
+      padding-left: 18px
+      font-size: 16px
+      line-height: 17px
+      color: #425A60
+
+  .face-shape-card
+    display: flex
+    justify-content: left
+    align-items: center
+    height: 89px
+
+    .icon
+      text-align: center
+
+      img
+        display: inline
+
+    .divisor
+      width: 1px
+      height: 35px
+      background: #DEDEDE
+
+    .name
+      font-weight: 600
+      font-size: 16px
+      line-height: 17px
+      color: #425A60
+
+    &.gender
+      .icon
+        width: 90px
+        padding-left: 3px
+
+      .name
+        padding-left: 24px
+
+    &.non-gender
+      .icon
+        width: 115px
+        padding-left: 3px
+
+      .name
+        padding-left: 15px
+
+  .facial-features-card
+    display: block
+    padding: 40px 0
+    text-align: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 17px
+    color: #425A60
+
+  .brand-option-card
+    display: flex
+    justify-content: center
+    flex-direction: column
+    height: 120px
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #425A60
+
+  .selection-card
+    display: block
+    height: 103px
+    box-sizing: border-box
+    position: relative
+    border: 2px solid #FFFFFF
+
+    .ok-icon
+      display: none
+      position: absolute
+      top: -7px
+      right: -7px
+
+    .selection-card-container
+      height: 100%
+
+    &.active
+      border: 2px solid #2196F3
+
+      .ok-icon
+        display: block
+
+  .frame-card
+    height: 100%
+    padding-top: 3px
+
+    .image
+      text-align: center
+
+      img
+        display: inline
+
+    .name
+      font-weight: 600
+      font-size: 14px
+      line-height: 14px
+      text-align: center
+      color: #697580
+
+  .brand-card
+    height: 100%
+    padding-top: 3px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .image
+      text-align: center
+
+      img
+        display: inline
+
+  .title-primary-lg
+    font-weight: 700
+    font-size: 24px
+    line-height: 31px
+    text-align: center
+    color: #2196F3
+
+  .title-primary-md
+    font-weight: 700
+    font-size: 20px
+    line-height: 150%
+    text-align: center
+    color: #2196F3
+
+  .description-primary-lg
+    font-weight: 700
+    font-size: 16px
+    line-height: 150%
+    text-align: center
+    color: #3A4850
+
+  .description-primary-md
+    font-weight: 700
+    font-size: 15px
+    line-height: 174%
+    text-align: center
+    color: #3A4850
+
+  .title-secondary
+    font-weight: 300
+    font-size: 20px
+    line-height: 30px
+    text-align: center
+    color: #0F0F0F
+
+  .description-secondary
+    font-weight: 400
+    font-size: 16px
+    line-height: 30px
+    text-align: center
+    color: #697580
+
+  .screen
+    .other-option
+      font-weight: 700
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      text-decoration-line: underline
+      color: #3A4850
+
+    .meta-primary
+      font-weight: 300
+      font-size: 20px
+      line-height: 30px
+      text-align: center
+      color: #0F0F0F
+
+    .meta-secondary
+      font-weight: 400
+      font-size: 16px
+      line-height: 30px
+      text-align: center
+      color: #697580
+
+    .hint
+      font-weight: 400
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+      color: #5B6971
+
+  .badge
+    img
+      display: inline

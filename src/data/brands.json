@@ -1,0 +1,50 @@
+[
+  {
+    "svg": "Ray Ban.svg",
+    "value": "ray_ban"
+  },
+  {
+    "svg": "Oakley.svg",
+    "value": "oakley"
+  },
+  {
+    "svg": "Gucci.svg",
+    "value": "gucci"
+  },
+  {
+    "svg": "Armani Exchange.svg",
+    "value": "armani_exchange"
+  },
+  {
+    "svg": "Hillary Duff.svg",
+    "value": "hillary_duff"
+  },
+  {
+    "svg": "Prada.svg",
+    "value": "prada"
+  },
+  {
+    "svg": "Versace.svg",
+    "value": "versace"
+  },
+  {
+    "svg": "Vogue eyewear.svg",
+    "value": "vogue_eyewear"
+  },
+  {
+    "svg": "Michael Kors.svg",
+    "value": "michael_kors"
+  },
+  {
+    "svg": "Coach.svg",
+    "value": "coach"
+  },
+  {
+    "svg": "Tory Burch.svg",
+    "value": "tory_burch"
+  },
+  {
+    "svg": "Burberry.svg",
+    "value": "burberry"
+  }
+]
